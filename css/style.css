@@ -1,0 +1,140 @@
+*{
+	margin:0;
+	padding:0;
+}
+ul,ol{
+	list-style: none;
+}
+body{
+	font-family: 'Raleway',sans-serif;
+	font-size: 16px;
+	background: #f3f3f3;
+}
+a{
+	text-decoration: none;
+}
+/**********nav开始**********/
+
+#nav{
+	height:12em;
+	width:100%;
+	position:relative;
+}
+#nav .nav-icon{
+	background: url(../img/nav-icon.png);
+	width: 3.25rem;
+	height: 3.25rem;
+	position:absolute;
+	top:33%;
+	right:5.375rem;
+	cursor:pointer;
+}
+#nav .nav-menu-box{
+	height: 100%;
+	width:100%;
+	position:absolute;
+	top:-12rem;
+	left:0;
+}
+#nav .nav-menu-bg{
+	height:100%;
+	background:rgb(82,87,89);
+	opacity:0.39;
+	filter: alpha(opacity=39);
+}
+#nav .nav-menu{
+	position:absolute;
+	width: 43.375rem;
+	height: 2rem;
+	left: 50%;
+	margin-left: -21.6875rem;
+	top:50%;
+	margin-top: -1rem;
+}
+#nav .nav-menu li{
+	float: left;
+}
+#nav .nav-menu li a{
+	margin:0.4375rem 1.5rem;
+	display: block;
+	color:#fff;
+}
+#nav .nav-close-icon{
+	width: 2.1875rem;
+	height: 2.1875rem;
+	display: inline-block;
+	background:url(../img/close2.png) no-repeat;
+	position:absolute;
+	right:10%;
+	top:50%;
+	margin-top:-1.125rem;
+	cursor:pointer;
+}
+/**********nav结束**********/
+#header{
+	width:100%;
+	min-height: 51.875rem;
+	overflow: hidden;
+	background: url(../img/bg2.jpg) no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+
+}
+@media (max-width:1024px){
+	#header{
+		min-height:43.125rem;
+	}
+	#nav{
+		height:10em;
+	}
+}
+@media (max-width:800px){
+	#header{
+		min-height:35.5rem;
+	}
+	#nav{
+		height:8em;
+	}
+}
+@media (max-width:640px){
+	#header{
+		min-height:28.75rem;
+	}
+	#nav{
+		height:6em;
+	}
+}
+@media (max-width:480px){
+	#header{
+		min-height:23.125rem;
+	}
+	#nav{
+		height:10rem;
+		z-index:2;
+	}
+	#nav .nav-menu li{
+		float: none;
+		width:10rem;
+		margin:0 auto;
+	}
+	#nav .nav-menu{
+		top:10px;
+	}
+	#nav .nav-icon{
+		top:10px;
+	}
+	#header .header-container{
+		position:absolute;
+		top:10%;
+		left:20%;
+		z-index:1;
+	}
+}
+@media(max-width:320px){
+	#header{
+		min-height:19.375rem;
+	}
+}
